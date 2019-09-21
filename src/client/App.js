@@ -1,14 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import Tableau from "./components/Tableau";
 
-class App extends Component {
-
-  render() {
-    return (
-      <div>
-          <h1 className="hello">Hello! 1</h1>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <div>
+        <Tableau />
+    </div>
+  );
 }
 
 export default App;
