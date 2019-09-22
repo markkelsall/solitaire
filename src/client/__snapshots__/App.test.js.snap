@@ -2,10 +2,58 @@
 
 exports[`App/> should render 1`] = `
 <div>
-  <h1
-    className="hello"
+  <div
+    className=""
   >
-    Hello! 1
-  </h1>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+    <div
+      styleName="style.table"
+    >
+      <span>
+        Pile
+      </span>
+    </div>
+  </div>
 </div>
 `;
