@@ -1,0 +1,12 @@
+:root {
+    --size-medium: 8px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row
+}
+
+.ma-medium {
+    margin: var(--size-medium);
+}

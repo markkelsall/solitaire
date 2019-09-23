@@ -1,11 +1,9 @@
 import React from "react";
-import style from './style.css';
+import './style.css';
 
 const Pile = () => {
   return (
-    <div styleName='style.table'>
-        <span>Pile</span>
-    </div>
+    <div className='pile'></div>
   );
 }
 

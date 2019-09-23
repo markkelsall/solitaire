@@ -1,5 +1,6 @@
-.table {
-    background-color: red;
-    width: 200px;
-    height: 200px;
+.pile {
+    width: 125px;
+    height: 175px;
+    border: 2px dashed black;
+    border-radius: 4px;
 }

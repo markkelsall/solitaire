@@ -1,6 +1,6 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin');
 
@@ -9,7 +9,7 @@ const outputDirectory = "dist";
 module.exports = {
   entry: "./src/client/index.js",
   output: {
-    path: path.join(__dirname),
+    path: path.resolve(__dirname),
     filename: "bundle.js"
   },
   module: {
@@ -25,16 +25,17 @@ module.exports = {
         }
       },
       {
-        test: /\.s?[ac]ss$/,
+        test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
           {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              modules: true,
-              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
+              // you can specify a publicPath here
+              // by default it uses publicPath in webpackOptions.output
+              hmr: process.env.NODE_ENV === 'development',
             },
           },
+          'css-loader',
         ],
       },
       {
@@ -52,8 +53,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
-    new HtmlWebpackPlugin({
-      template: "./index.html"
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false,
     }),
     new CompressionPlugin(),
     new BundleAnalyzerPlugin()
