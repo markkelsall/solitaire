@@ -1,4 +1,9 @@
-
+.pile {
+    width: 125px;
+    height: 175px;
+    border: 2px dashed black;
+    border-radius: 4px;
+}
 :root {
     --size-medium: 8px;
 }
@@ -9,13 +14,6 @@
 }
 
 .ma-medium {
-    margin: var(--size-medium, 8px);
-}
-
-.pile {
-    width: 125px;
-    height: 175px;
-    border: 2px dashed black;
-    border-radius: 4px;
+    margin: var(--size-medium);
 }
 
