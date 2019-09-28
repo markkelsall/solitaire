@@ -1,7 +1,6 @@
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin');
 
 const outputDirectory = "dist";
@@ -58,7 +57,6 @@ module.exports = {
       chunkFilename: '[id].css',
       ignoreOrder: false,
     }),
-    new CompressionPlugin(),
-    new BundleAnalyzerPlugin()
+    new CompressionPlugin()
   ]
 };

@@ -3,56 +3,56 @@
 exports[`App/> should render 1`] = `
 <div>
   <div
-    className=""
+    className="row"
   >
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
     <div
-      styleName="style.table"
+      className="ma-medium"
     >
-      <span>
-        Pile
-      </span>
+      <div
+        className="pile"
+      />
     </div>
   </div>
 </div>
