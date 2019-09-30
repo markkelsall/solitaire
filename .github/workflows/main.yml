@@ -13,5 +13,5 @@ jobs:
     - uses: Borales/actions-yarn@1.1.0
     - name: build and run tests
       run: |
-      yarn
-      yarn test
+        yarn
+        yarn test
