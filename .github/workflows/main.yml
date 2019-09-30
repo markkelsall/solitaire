@@ -14,4 +14,3 @@ jobs:
     - name: build and run tests
       run: |
         yarn
-        yarn test
