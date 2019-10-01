@@ -1,0 +1,31 @@
+name: Node.js Package
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+      - uses: Borales/actions-yarn@1.1.0
+      - run: yarn
+      - run: yarn test
+
+  release:
+    needs: build_and_test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+      - uses: mikeal/npx@1.0.0
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npx semantic-release
