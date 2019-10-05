@@ -12,15 +12,10 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: Borales/actions-yarn@1.1.0
+      - uses: mikeal/npx@1.0.0
       - run: yarn
       - run: yarn test
-
-  release:
-    needs: build_and_test
-    runs-on: ubuntu-latest
-    steps:
-      - env: 
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - uses: mikeal/npx@1.0.0
       - run: npx semantic-release
