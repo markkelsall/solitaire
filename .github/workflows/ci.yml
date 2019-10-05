@@ -12,10 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Borales/actions-yarn@master
-      - working-directory: ./solitaire
-      - run: yarn
-      - run: yarn test
+      - run: npm
+      - run: npm test
         
   release:
     needs: build
