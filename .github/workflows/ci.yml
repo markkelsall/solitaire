@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install
-        working-directory: ./solitaire
+        working-directory: solitaire
       - run: npm run test
-        working-directory: ./solitaire
+        working-directory: solitaire
         
   release:
     needs: build
