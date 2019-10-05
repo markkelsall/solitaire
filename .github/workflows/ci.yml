@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: Borales/actions-yarn@master
-      - run: cd ../
+      - working-directory: ./solitaire
       - run: yarn
       - run: yarn test
         
