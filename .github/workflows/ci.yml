@@ -9,13 +9,16 @@ on:
       - master
 
 jobs:
-  build_and_test:
+  build_and_release:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: build
       - uses: Borales/actions-yarn@1.1.0
-      - uses: mikeal/npx@1.0.0
       - run: yarn
       - run: yarn test
+        
+      - name: Release
+      - uses: mikeal/npx@1.0.0
+      - env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - run: npx semantic-release
