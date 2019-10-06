@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: npm ci
-      - run: npm run test
-
+      - uses: Borales/actions-yarn@1.1.0
+      - run: yarn
+      - run: yarn test
+        
   
