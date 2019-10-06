@@ -1,6 +1,6 @@
 {
   "name": "simple-react-full-stack",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
   "main": "src/client/index.js",
   "scripts": {
