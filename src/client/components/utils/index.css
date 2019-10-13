@@ -10,3 +10,7 @@
 .ma-medium {
     margin: var(--size-medium);
 }
+
+#root {
+    height: 100%;
+}
