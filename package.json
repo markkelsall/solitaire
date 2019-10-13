@@ -9,8 +9,7 @@
     "dev-client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "dev-server": "nodemon --exec babel-node src/server/index.js",
     "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
-    "test": "jest --coverage",
-    "pre-commit": "node ./pre-commit.js"
+    "test": "jest --coverage"
   },
   "jest": {
     "moduleNameMapper": {
