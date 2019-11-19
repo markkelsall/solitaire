@@ -1,21 +1,21 @@
-# simple-react-full-stack
+# Solitaire
 
 ```bash
 # Clone the repository
-git clone https://github.com/markkelsall/simple-react-full-stack
+git clone https://github.com/markkelsall/solitaire
 
 # Go inside the directory
-cd simple-react-full-stack
+cd solitaire
 
 # Install dependencies
-yarn (or npm install)
+yarn
 
 # Start development server
-yarn dev (or npm run dev)
+yarn dev
 
 # Build for production
-yarn build (or npm run build)
+yarn build
 
 # Start production server
-yarn start (or npm start)
+yarn start
 ```
