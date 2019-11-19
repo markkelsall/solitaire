@@ -11,36 +11,6 @@
     "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
     "test": "jest --coverage"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
-    }
-  },
-  "release": {
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      {
-        "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ]
-    ],
-    "branch": "master"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "node pre-commit.js"
