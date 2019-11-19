@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/markkelsall/solitaire/compare/v1.1.2...v1.1.3) (2019-11-19)
+
+
+### Bug Fixes
+
+* remove unused config ([5146072](https://github.com/markkelsall/solitaire/commit/51460729ad2d11f0abd55204e70b03a88e2f2648))
+
 ## [1.1.2](https://github.com/markkelsall/solitaire/compare/v1.1.1...v1.1.2) (2019-11-19)
 
 
