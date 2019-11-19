@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/markkelsall/solitaire/compare/v1.1.1...v1.1.2) (2019-11-19)
+
+
+### Bug Fixes
+
+* move husky config ([3cdc358](https://github.com/markkelsall/solitaire/commit/3cdc35800ba9a6cc0e1747e28ef50071856f41ec))
+* tidy up config ([c8e1067](https://github.com/markkelsall/solitaire/commit/c8e1067a7e08779ffc87392c1bba05977c153b2a))
+
 ## [1.1.1](https://github.com/markkelsall/solitaire/compare/v1.1.0...v1.1.1) (2019-11-19)
 
 
