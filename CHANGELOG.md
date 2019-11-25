@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/markkelsall/solitaire/compare/v1.1.4...v1.2.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* add bundle file ([e187fb6](https://github.com/markkelsall/solitaire/commit/e187fb6ffcc5a7b752dd0c6ae7e30025420437f0))
+
+
+### Features
+
+* separate css out and use postcss ([0245d9c](https://github.com/markkelsall/solitaire/commit/0245d9cea15657984e81828afae81a3bc1436842))
+
 ## [1.1.4](https://github.com/markkelsall/solitaire/compare/v1.1.3...v1.1.4) (2019-11-22)
 
 
