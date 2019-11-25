@@ -1,6 +1,5 @@
 import React from "react";
 import Pile from "../Pile/Pile";
-import '../utils/index.css';
 
 const Tableau = () => {
   return (

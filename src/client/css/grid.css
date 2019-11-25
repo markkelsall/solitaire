@@ -1,0 +1,8 @@
+.ma-medium {
+    margin: var(--size-medium);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

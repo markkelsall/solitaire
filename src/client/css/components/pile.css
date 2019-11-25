@@ -1,6 +1,6 @@
 .pile {
     width: 125px;
     height: 175px;
-    border: 2px dashed black;
+    border: 2px dashed var(--black);
     border-radius: 4px;
 }
