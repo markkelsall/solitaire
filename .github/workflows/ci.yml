@@ -29,12 +29,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
   
-  deploy:
-    needs: build
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: JamesIves/github-pages-deploy-action@3.0.4
-      - with:
-          - GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          - BRANCH: gh-pages
-          - FOLDER: .
+      - uses: actions/checkout@v1
+      - uses: Borales/actions-yarn@master
+      - run: yarn test
