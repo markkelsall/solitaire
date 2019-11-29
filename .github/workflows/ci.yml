@@ -35,6 +35,6 @@ jobs:
     steps:
       - uses: JamesIves/github-pages-deploy-action@3.0.4
       - with:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: .
+          - GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          - BRANCH: gh-pages
+          - FOLDER: .
