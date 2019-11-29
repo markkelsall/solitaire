@@ -32,7 +32,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Build
+        run: |
+          yarn
+          yarn build
+      
       - uses: JamesIves/github-pages-deploy-action@3.0.4
-      - run: yarn
-      - run: yarn build
+      - with:
+          - GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          - BRANCH: gh-pages
+          - FOLDER: ./
