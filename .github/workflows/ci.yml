@@ -29,9 +29,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
   
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: Borales/actions-yarn@master
-      - run: yarn test
+      - uses: JamesIves/github-pages-deploy-action@3.0.4
+      - run: yarn
+      - run: yarn build
