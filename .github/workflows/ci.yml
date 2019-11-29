@@ -14,8 +14,8 @@ jobs:
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
-      uses: mikeal/npx@1.0.0
+    - uses: actions/checkout@v1
+    - uses: mikeal/npx@1.0.0
 
     - name: Build
       run: |
