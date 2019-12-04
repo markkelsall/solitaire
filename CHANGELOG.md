@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/markkelsall/solitaire/compare/v1.2.0...v1.2.1) (2019-12-04)
+
+
+### Bug Fixes
+
+* update CI ([4834cb6](https://github.com/markkelsall/solitaire/commit/4834cb6b69b6c9738a76129be887ec8b8a21874c))
+
 # [1.2.0](https://github.com/markkelsall/solitaire/compare/v1.1.4...v1.2.0) (2019-11-25)
 
 
