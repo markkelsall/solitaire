@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/markkelsall/solitaire/compare/v1.2.2...v1.2.3) (2019-12-04)
+
+
+### Bug Fixes
+
+* add deploy ([ae52d62](https://github.com/markkelsall/solitaire/commit/ae52d6207a6f7792c482f042e32c126f82519f12))
+
 ## [1.2.2](https://github.com/markkelsall/solitaire/compare/v1.2.1...v1.2.2) (2019-12-04)
 
 
