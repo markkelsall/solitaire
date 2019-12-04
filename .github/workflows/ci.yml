@@ -46,4 +46,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BRANCH: master
-          FOLDER: ./
+          FOLDER: .
