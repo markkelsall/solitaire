@@ -1,6 +1,6 @@
 {
   "name": "solitaire",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Solitaire game",
   "main": "src/client/index.js",
   "scripts": {

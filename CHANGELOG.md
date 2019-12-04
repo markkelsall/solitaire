@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/markkelsall/solitaire/compare/v1.2.3...v1.2.4) (2019-12-04)
+
+
+### Bug Fixes
+
+* update folder ([4c14a71](https://github.com/markkelsall/solitaire/commit/4c14a71e9a7bebd67bc254aef20bcb0addefba07))
+
 ## [1.2.3](https://github.com/markkelsall/solitaire/compare/v1.2.2...v1.2.3) (2019-12-04)
 
 
