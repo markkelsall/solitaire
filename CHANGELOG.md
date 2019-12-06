@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/markkelsall/solitaire/compare/v1.3.0...v1.3.1) (2019-12-06)
+
+
+### Bug Fixes
+
+* remove dist from .gitignore ([e3ed603](https://github.com/markkelsall/solitaire/commit/e3ed603a720705d5c7c1258897cf6307bcd479cd))
+
 # [1.3.0](https://github.com/markkelsall/solitaire/compare/v1.2.4...v1.3.0) (2019-12-06)
 
 
