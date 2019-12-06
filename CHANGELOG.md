@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/markkelsall/solitaire/compare/v1.3.5...v1.3.6) (2019-12-06)
+
+
+### Bug Fixes
+
+* remove babel-jest and add bundle checker ([7e37111](https://github.com/markkelsall/solitaire/commit/7e371111550fbedc20d73f5cc264c5184d7765e9))
+
 ## [1.3.5](https://github.com/markkelsall/solitaire/compare/v1.3.4...v1.3.5) (2019-12-06)
 
 
