@@ -9,7 +9,8 @@
     "build:js": "webpack --mode production",
     "build:css": "postcss src/client/css/main.css -o dist/main.css",
     "build:css:watch": "yarn build:css --watch",
-    "test": "jest"
+    "test": "jest",
+    "check-bundle-size": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "author": "Mark Kelsall",
   "license": "ISC",
@@ -31,7 +32,6 @@
     "@babel/preset-react": "^7.0.0",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
-    "babel-jest": "^24.9.0",
     "babel-loader": "8",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^17.0.0",
