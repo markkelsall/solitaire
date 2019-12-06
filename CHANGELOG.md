@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/markkelsall/solitaire/compare/v1.3.4...v1.3.5) (2019-12-06)
+
+
+### Bug Fixes
+
+* remove unused packages ([7c42259](https://github.com/markkelsall/solitaire/commit/7c42259ba8777d4d5d20c21bf4cfe26a65fbc476))
+
 ## [1.3.4](https://github.com/markkelsall/solitaire/compare/v1.3.3...v1.3.4) (2019-12-06)
 
 
