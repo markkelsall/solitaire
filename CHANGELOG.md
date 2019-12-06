@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/markkelsall/solitaire/compare/v1.3.2...v1.3.3) (2019-12-06)
+
+
+### Bug Fixes
+
+* remove any dist folder changes ([bc77803](https://github.com/markkelsall/solitaire/commit/bc7780354ba04885f51bb3c134c4eb38bf5c8aad))
+
 ## [1.3.2](https://github.com/markkelsall/solitaire/compare/v1.3.1...v1.3.2) (2019-12-06)
 
 
