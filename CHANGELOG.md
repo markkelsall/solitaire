@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/markkelsall/solitaire/compare/v1.2.4...v1.3.0) (2019-12-06)
+
+
+### Bug Fixes
+
+* update naming for job ([2daf309](https://github.com/markkelsall/solitaire/commit/2daf30936915b988400bff22e5b923467664cc8c))
+
+
+### Features
+
+* remove dist from repo ([bf593bd](https://github.com/markkelsall/solitaire/commit/bf593bdd5e78112d94b6080f1c8165fc8ac56620))
+
 ## [1.2.4](https://github.com/markkelsall/solitaire/compare/v1.2.3...v1.2.4) (2019-12-04)
 
 
