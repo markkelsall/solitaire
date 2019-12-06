@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/markkelsall/solitaire/compare/v1.3.1...v1.3.2) (2019-12-06)
+
+
+### Bug Fixes
+
+* add dist files ([0757aea](https://github.com/markkelsall/solitaire/commit/0757aea7ac859989278ff47dca5eab06e79ff2e2))
+* remove the source code in dist ([5c6eab1](https://github.com/markkelsall/solitaire/commit/5c6eab161fa1062669be7079001f02e1a7a15e07))
+* resolve conflicts ([115f24d](https://github.com/markkelsall/solitaire/commit/115f24da5872f74f7956f27de0f07d48af5ac326))
+
 ## [1.3.1](https://github.com/markkelsall/solitaire/compare/v1.3.0...v1.3.1) (2019-12-06)
 
 
