@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/markkelsall/solitaire/compare/v1.3.3...v1.3.4) (2019-12-06)
+
+
+### Bug Fixes
+
+* update package.json ([114ea1c](https://github.com/markkelsall/solitaire/commit/114ea1ccd35c5e1f5917432af1918cb73e1b04e5))
+
 ## [1.3.3](https://github.com/markkelsall/solitaire/compare/v1.3.2...v1.3.3) (2019-12-06)
 
 
