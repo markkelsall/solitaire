@@ -4,8 +4,9 @@
   "description": "Solitaire game",
   "main": "src/client/index.js",
   "scripts": {
-    "build": "concurrently webpack --mode production && yarn build:css",
+    "build": "yarn build:js && yarn build:css",
     "dev": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "build:js": "webpack --mode production",
     "build:css": "postcss src/client/css/main.css -o dist/main.css",
     "build:css:watch": "yarn build:css --watch",
     "test": "jest"
