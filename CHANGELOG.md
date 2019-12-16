@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/markkelsall/solitaire/compare/v1.4.0...v1.4.1) (2019-12-16)
+
+
+### Bug Fixes
+
+* stop beautify running ([580e0b3](https://github.com/markkelsall/solitaire/commit/580e0b3a58e554ce8a2e987247ee7e751b4135d7))
+
 # [1.4.0](https://github.com/markkelsall/solitaire/compare/v1.3.6...v1.4.0) (2019-12-16)
 
 
