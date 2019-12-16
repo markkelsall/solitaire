@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/markkelsall/solitaire/compare/v1.3.6...v1.4.0) (2019-12-16)
+
+
+### Features
+
+* use tailwind for css ([775366f](https://github.com/markkelsall/solitaire/commit/775366f64f9b85bdb95faeda4fdb2e5cb309f02e))
+
 ## [1.3.6](https://github.com/markkelsall/solitaire/compare/v1.3.5...v1.3.6) (2019-12-06)
 
 
