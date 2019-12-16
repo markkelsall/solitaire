@@ -1,61 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App/> should render 1`] = `
-<div
-  className="game"
->
+Array [
+  " ",
   <div
-    className="row"
+    className="flex flex-row"
   >
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
+     
     <div
-      className="ma-medium"
+      className="mr-4"
     >
       <div
-        className="pile"
-      />
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
     </div>
-  </div>
-</div>
+     
+  </div>,
+  " ",
+]
 `;
