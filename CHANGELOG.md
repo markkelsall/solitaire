@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/markkelsall/solitaire/compare/v1.4.1...v1.4.2) (2019-12-17)
+
+
+### Bug Fixes
+
+* format code ([f92f992](https://github.com/markkelsall/solitaire/commit/f92f992daedeb673b78a94fd279ba6c0abb11ee2))
+
 ## [1.4.1](https://github.com/markkelsall/solitaire/compare/v1.4.0...v1.4.1) (2019-12-16)
 
 
