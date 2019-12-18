@@ -1,4 +1,5 @@
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/client/index.js",
@@ -20,6 +21,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'src/cards',
+        to: 'cards'
+      }
+    ])
+  ],
   devServer: {
     port: 3000,
     open: true,

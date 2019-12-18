@@ -1,12 +1,17 @@
 import React from "react";
-import Game from "./components/Game";
-import Tableau from "./components/Tableau";
 
-const App = deck => {
+import Tableau from "./components/Tableau";
+import Stock from "./components/Stock";
+
+const App = ({ shuffleDeck }) => {
   return (
-      <Game>
-        <Tableau />
-      </Game>
+    <div>
+      <div className="flex justify-between">
+        <Stock />
+        <button onClick={() => shuffleDeck()}>Reset game</button>
+      </div>
+      <Tableau />
+    </div>
   );
 }
 
