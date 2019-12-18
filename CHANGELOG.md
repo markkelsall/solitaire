@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/markkelsall/solitaire/compare/v1.4.2...v1.5.0) (2019-12-18)
+
+
+### Features
+
+* add reset button and deck images ([8b21938](https://github.com/markkelsall/solitaire/commit/8b21938e1f2b0b5e507f3131229f0d81bd9c2a32))
+
 ## [1.4.2](https://github.com/markkelsall/solitaire/compare/v1.4.1...v1.4.2) (2019-12-17)
 
 
