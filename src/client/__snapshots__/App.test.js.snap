@@ -5,17 +5,49 @@ exports[`App/> should render 1`] = `
   <div
     className="flex justify-between"
   >
-    <div>
-      <img
-        className="w-32 h48"
-        src="./cards/red_back.png"
-      />
-    </div>
-    <button
-      onClick={[Function]}
+    <div
+      className="flex flex-row"
     >
-      Reset game
-    </button>
+      <div
+        className="mr-4"
+      >
+        <div>
+          <img
+            className="w-32 h48"
+            src="./cards/red_back.png"
+          />
+        </div>
+      </div>
+      <div
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
+    </div>
+    <div
+      className="flex flex-row"
+    >
+      <div
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
+      <div
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
+      <div
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
+      <div
+        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+      >
+         
+      </div>
+    </div>
   </div>
   <div
     className="flex flex-row"
