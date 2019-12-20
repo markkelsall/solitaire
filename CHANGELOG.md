@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
+
+
+### Bug Fixes
+
+* add talon and foundations visually ([39aff5b](https://github.com/markkelsall/solitaire/commit/39aff5b15df9721af287c36cb962924ace76e53a))
+
 # [1.5.0](https://github.com/markkelsall/solitaire/compare/v1.4.2...v1.5.0) (2019-12-18)
 
 
