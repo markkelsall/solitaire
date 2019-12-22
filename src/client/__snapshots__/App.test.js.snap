@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App/> should render 1`] = `
-<div>
+<div
+  className="p-4"
+>
   <div
     className="flex justify-between"
   >
@@ -28,91 +30,111 @@ exports[`App/> should render 1`] = `
       className="flex flex-row"
     >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
     </div>
   </div>
   <div
-    className="flex flex-row"
+    className="flex justify-end mt-4"
   >
     <div
-      className="mr-4"
+      className="flex flex-row"
     >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
-    </div>
-    <div
-      className="mr-4"
-    >
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="ml-4"
       >
-         
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
+        </div>
       </div>
     </div>
   </div>
