@@ -1,11 +1,3 @@
-## [1.5.2](https://github.com/markkelsall/solitaire/compare/v1.5.1...v1.5.2) (2019-12-30)
-
-
-### Bug Fixes
-
-* renames and styling ([79a5839](https://github.com/markkelsall/solitaire/commit/79a58393c3ed88d762fe2766143bcf88ef99d62d))
-* tests ([e05d792](https://github.com/markkelsall/solitaire/commit/e05d7925d44ef53e305755c1eae9096cb606c97c))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
