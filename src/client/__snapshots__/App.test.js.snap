@@ -5,138 +5,147 @@ exports[`App/> should render 1`] = `
   className="p-4"
 >
   <div
-    className="flex justify-between"
+    className="flex flex-col"
   >
     <div
-      className="flex flex-row"
+      className="flex justify-between"
     >
       <div
-        className="mr-4"
+        className="flex flex-row"
       >
-        <div>
-          <img
-            className="w-32 h48"
-            src="./cards/red_back.png"
-          />
+        <div
+          className="mr-4"
+        >
+          <div>
+            <img
+              className="w-32 h48"
+              src="./cards/red_back.png"
+            />
+          </div>
+        </div>
+        <div
+          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        >
+           
         </div>
       </div>
       <div
-        className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+        className="flex flex-row"
       >
-         
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
       </div>
     </div>
     <div
-      className="flex flex-row"
+      className="flex justify-end mt-4"
     >
       <div
-        className="ml-4"
+        className="flex flex-row"
       >
         <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          className="ml-4"
         >
-           
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
         </div>
-      </div>
-      <div
-        className="ml-4"
-      >
         <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          className="ml-4"
         >
-           
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
         </div>
-      </div>
-      <div
-        className="ml-4"
-      >
         <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          className="ml-4"
         >
-           
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
         </div>
-      </div>
-      <div
-        className="ml-4"
-      >
         <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          className="ml-4"
         >
-           
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
+        </div>
+        <div
+          className="ml-4"
+        >
+          <div
+            className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
+          >
+             
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div
-    className="flex justify-end mt-4"
+  <button
+    onClick={[Function]}
   >
-    <div
-      className="flex flex-row"
-    >
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-      <div
-        className="ml-4"
-      >
-        <div
-          className="w-32 h-48 border-dashed border-2 border-black rounded-lg"
-        >
-           
-        </div>
-      </div>
-    </div>
-  </div>
+    New Game
+  </button>
 </div>
 `;
