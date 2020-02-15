@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/markkelsall/solitaire/compare/v1.5.2...v1.6.0) (2020-02-15)
+
+
+### Bug Fixes
+
+* update pipeline to run tests in band ([82244fc](https://github.com/markkelsall/solitaire/commit/82244fc35d8b6f9ad65eeb889c554d94b125d786))
+
+
+### Features
+
+* pass deck down to piles & reset game ([069c756](https://github.com/markkelsall/solitaire/commit/069c75644760a108246705f3c8f1b9dc55c72dac))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
