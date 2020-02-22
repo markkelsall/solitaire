@@ -143,6 +143,7 @@ exports[`App/> should render 1`] = `
     </div>
   </div>
   <button
+    data-testid="resetGame"
     onClick={[Function]}
   >
     New Game
