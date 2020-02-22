@@ -1,10 +1,3 @@
-## [1.6.1](https://github.com/markkelsall/solitaire/compare/v1.6.0...v1.6.1) (2020-02-22)
-
-
-### Bug Fixes
-
-* add test for reset game ([1c641c1](https://github.com/markkelsall/solitaire/commit/1c641c1d8061c4730fe4c4eca49a1d6dcc394222))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
