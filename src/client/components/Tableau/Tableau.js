@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Pile from "../Pile/Pile";
 
-const Tableau = ({ deck }) => {
+const Tableau = ({ tableauDeck }) => {
 
   let pileOne;
   let pileTwo;
@@ -11,14 +11,14 @@ const Tableau = ({ deck }) => {
   let pileSix;
   let pileSeven;
 
-  if (deck) {
-    pileOne = deck.slice(0, 1);
-    pileTwo = deck.slice(1, 3);
-    pileThree = deck.slice(3, 6);
-    pileFour = deck.slice(6, 10);
-    pileFive = deck.slice(10, 15);
-    pileSix = deck.slice(15, 21);
-    pileSeven = deck.slice(21, 28);
+  if (tableauDeck) {
+    pileOne = tableauDeck.slice(0, 1);
+    pileTwo = tableauDeck.slice(1, 3);
+    pileThree = tableauDeck.slice(3, 6);
+    pileFour = tableauDeck.slice(6, 10);
+    pileFive = tableauDeck.slice(10, 15);
+    pileSix = tableauDeck.slice(15, 21);
+    pileSeven = tableauDeck.slice(21, 28);
   }
 
   return (
