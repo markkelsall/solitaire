@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/markkelsall/solitaire/compare/v1.7.0...v1.7.1) (2020-02-27)
+
+
+### Bug Fixes
+
+* run build & update husky config ([2128003](https://github.com/markkelsall/solitaire/commit/21280038383f2cde2d053730a0a1ea9a206dbce8))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
