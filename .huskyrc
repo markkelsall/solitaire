@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "node pre-commit.js"
-  }
-}
