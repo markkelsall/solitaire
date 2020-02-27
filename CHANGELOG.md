@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/markkelsall/solitaire/compare/v1.6.1...v1.7.0) (2020-02-27)
+
+
+### Features
+
+* add context with some basic functionality ([697f42e](https://github.com/markkelsall/solitaire/commit/697f42e18af5362ebfb14f35714843480e9040d6))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
