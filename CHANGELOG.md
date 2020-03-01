@@ -1,10 +1,3 @@
-## [1.7.5](https://github.com/markkelsall/solitaire/compare/v1.7.4...v1.7.5) (2020-03-01)
-
-
-### Bug Fixes
-
-* bump version again ([58e426c](https://github.com/markkelsall/solitaire/commit/58e426c6c43bf7d1095a5f55a08562311af6fb25))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
