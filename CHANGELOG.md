@@ -1,10 +1,3 @@
-## [1.7.2](https://github.com/markkelsall/solitaire/compare/v1.7.1...v1.7.2) (2020-03-01)
-
-
-### Bug Fixes
-
-* compress some images ([6fd4da6](https://github.com/markkelsall/solitaire/commit/6fd4da62e900a896767639fa9afa3dc1885782ae))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
