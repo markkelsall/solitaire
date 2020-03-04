@@ -1,10 +1,3 @@
-## [1.7.6](https://github.com/markkelsall/solitaire/compare/v1.7.5...v1.7.6) (2020-03-04)
-
-
-### Bug Fixes
-
-* useReducer to manage complex state ([38f36c9](https://github.com/markkelsall/solitaire/commit/38f36c9b505e757378fc17e28f79137ec992c6f0))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
