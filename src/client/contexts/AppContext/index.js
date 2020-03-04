@@ -1,29 +1,39 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useReducer } from 'react';
 
 const AppContext = createContext();
 const AppConsumer = AppContext.Consumer;
 
+const reducer = (state, action) => {
+    switch (action.type) {
+        case "SHOW_NEXT":
+            const newStockDeck = [...state.stockDeck];
+            const card = newStockDeck.pop();
+            const newWasteDeck = [...state.wasteDeck];
+            newWasteDeck.unshift(card);
+            return {
+                ...state,
+                stockDeck: newStockDeck,
+                wasteDeck: newWasteDeck
+            };
+        case "RESET":
+            return {
+                ...state,
+                wasteDeck: [],
+                stockDeck: [...state.wasteDeck]
+            };
+        default:
+            return;
+    }
+};
+
 const AppProvider = props => {
 
     const showNext = () => {
-        const { stockDeck, wasteDeck } = appState;
-        wasteDeck.unshift(stockDeck.pop());
-        setState({
-            ...appState,
-            wasteDeck,
-            stockDeck
-        });
+        dispatch({ type: "SHOW_NEXT" });
     }
 
     const resetWaste = () => {
-        const { wasteDeck } = appState;
-        const resetStockDeck = wasteDeck;
-        const resetWasteDeck = [];
-        setState({
-            ...appState,
-            wasteDeck: resetWasteDeck,
-            stockDeck: resetStockDeck
-        });
+        dispatch({ type: "RESET" });
     }
 
     const moveCardToFoundations = () => {
@@ -46,7 +56,7 @@ const AppProvider = props => {
         moveCardToFoundations
     };
 
-    const [appState, setState] = useState(initialState);
+    const [appState, dispatch] = useReducer(reducer, initialState);
 
     return (
         <AppContext.Provider value={appState}>
