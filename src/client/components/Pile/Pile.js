@@ -80,6 +80,8 @@ const Pile = ({ cards }) => {
             </div>
         );
     }
+
+    return null;
 }
 
 export default Pile;

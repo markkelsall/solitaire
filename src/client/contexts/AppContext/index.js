@@ -40,6 +40,10 @@ const AppProvider = props => {
         console.log("called moveCardToFoundations");
     }
 
+    const checkIfCardCanBeMovedToFoundations = () => {
+        console.log("checkIfCardCanBeMovedToFoundations");
+    }
+
     let tableauDeck = [];
     let remainingDeck = [];
     if (props.deck && props.deck.length > 0) {
@@ -53,7 +57,8 @@ const AppProvider = props => {
         tableauDeck,
         showNext,
         resetWaste,
-        moveCardToFoundations
+        moveCardToFoundations,
+        checkIfCardCanBeMovedToFoundations
     };
 
     const [appState, dispatch] = useReducer(reducer, initialState);

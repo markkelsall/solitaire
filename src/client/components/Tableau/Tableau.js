@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import AppContext from "../../contexts/AppContext";
 import Pile from "../Pile/Pile";
 
-const Tableau = ({ tableauDeck }) => {
+const Tableau = () => {
+
+  const { tableauDeck, checkIfCardCanBeMovedToFoundations } = useContext(AppContext);
 
   let pileOne;
   let pileTwo;

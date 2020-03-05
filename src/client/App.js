@@ -2,7 +2,7 @@ import React from "react";
 
 import { AppProvider } from './contexts/AppContext';
 
-import AppTableauConsumer from "./components/Tableau/AppTableauConsumer";
+import Tableau from "./components/Tableau";
 import AppHandConsumer from "./components/Hand/AppHandConsumer";
 import AppWasteConsumer from "./components/Waste/AppWasteConsumer";
 import Foundations from "./components/Foundations";
@@ -23,7 +23,7 @@ const App = ({ shuffleDeck, deck }) => {
             <Foundations />
           </div>
           <div className="flex justify-end mt-4">
-            <AppTableauConsumer />
+            <Tableau />
           </div>
         </div>
         <ResetGame shuffleDeck={shuffleDeck} />
