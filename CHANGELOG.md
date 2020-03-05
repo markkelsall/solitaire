@@ -1,11 +1,3 @@
-# [1.8.0](https://github.com/markkelsall/solitaire/compare/v1.7.8...v1.8.0) (2020-03-05)
-
-
-### Features
-
-* add pile display logic ([1d145f0](https://github.com/markkelsall/solitaire/commit/1d145f0877267c6f1980c0cbfac815b55d466774))
-* show tableau cards ([2bf82d0](https://github.com/markkelsall/solitaire/commit/2bf82d0560c387dee2c0f794490e714b432d527a))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
