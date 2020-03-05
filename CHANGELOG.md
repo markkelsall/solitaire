@@ -1,3 +1,10 @@
+## [1.7.7](https://github.com/markkelsall/solitaire/compare/v1.7.6...v1.7.7) (2020-03-05)
+
+
+### Bug Fixes
+
+* shrink pngs ([d67d8d3](https://github.com/markkelsall/solitaire/commit/d67d8d309b7c04fbae981d5117cf5d8854979e7a))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
