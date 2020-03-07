@@ -1,13 +1,13 @@
 import React from "react";
-
-import { AppProvider } from './contexts/AppContext';
 import { DndProvider } from "react-dnd";
 import Backend from "react-dnd-html5-backend";
+
+import { AppProvider } from './contexts/AppContext';
 
 import Tableau from "./components/Tableau";
 import AppHandConsumer from "./components/Hand/AppHandConsumer";
 import AppWasteConsumer from "./components/Waste/AppWasteConsumer";
-import Foundations from "./components/Foundations";
+import FoundationsList from "./components/FoundationsList";
 import ResetGame from "./components/ResetGame";
 
 const App = ({ shuffleDeck, deck }) => {
@@ -23,7 +23,7 @@ const App = ({ shuffleDeck, deck }) => {
                 </div>
                 <AppWasteConsumer />
               </div>
-              <Foundations />
+              <FoundationsList />
             </div>
             <div className="flex justify-end mt-4">
               <Tableau />
