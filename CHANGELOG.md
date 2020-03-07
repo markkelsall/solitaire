@@ -1,10 +1,3 @@
-# [1.9.0](https://github.com/markkelsall/solitaire/compare/v1.8.0...v1.9.0) (2020-03-07)
-
-
-### Features
-
-* add DnD to ActiveCard ([5577ca6](https://github.com/markkelsall/solitaire/commit/5577ca69f3b7aabd6d4e445b0ef191ee679ca411))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
