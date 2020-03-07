@@ -1,17 +1,16 @@
 import React from "react";
+import ActiveCard from "../ActiveCard";
 
 const Pile = ({ cards }) => {
     if (cards.length === 1) {
-        const url = `./cards/${cards[0].imageUrl}`;
-        return (<img src={url} className="w-32 h48" />);
+        return (<ActiveCard card={cards[0]} />);
     }
 
     if (cards.length === 2) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-4" />
+                <ActiveCard card={cards[0]} className="absolute mt-4" />
             </div>
         );
     }
@@ -22,7 +21,7 @@ const Pile = ({ cards }) => {
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-8" />
+                <ActiveCard card={cards[0]} className="absolute mt-8" />
             </div>
         );
     }
@@ -34,7 +33,7 @@ const Pile = ({ cards }) => {
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-12" />
+                <ActiveCard card={cards[0]} className="absolute mt-12" />
             </div>
         );
     }
@@ -47,7 +46,7 @@ const Pile = ({ cards }) => {
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-16" />
+                <ActiveCard card={cards[0]} className="absolute mt-16" />
             </div>
         );
     }
@@ -61,7 +60,7 @@ const Pile = ({ cards }) => {
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-20" />
+                <ActiveCard card={cards[0]} className="absolute mt-20" />
             </div>
         );
     }
@@ -76,7 +75,7 @@ const Pile = ({ cards }) => {
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" />
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-20" />
-                <img src={url} className="w-32 h48 z-10 absolute mt-24" />
+                <ActiveCard card={cards[0]} className="absolute mt-24" />
             </div>
         );
     }

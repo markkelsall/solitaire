@@ -1,6 +1,8 @@
 import React from "react";
 
 import { AppProvider } from './contexts/AppContext';
+import { DndProvider } from "react-dnd";
+import Backend from "react-dnd-html5-backend";
 
 import Tableau from "./components/Tableau";
 import AppHandConsumer from "./components/Hand/AppHandConsumer";
@@ -11,23 +13,25 @@ import ResetGame from "./components/ResetGame";
 const App = ({ shuffleDeck, deck }) => {
   return (
     <AppProvider deck={deck}>
-      <div className="p-4">
-        <div className="flex flex-col">
-          <div className="flex justify-between">
-            <div className="flex flex-row">
-              <div className="mr-4">
-                <AppHandConsumer />
+      <DndProvider backend={Backend}>
+        <div className="p-4">
+          <div className="flex flex-col">
+            <div className="flex justify-between">
+              <div className="flex flex-row">
+                <div className="mr-4">
+                  <AppHandConsumer />
+                </div>
+                <AppWasteConsumer />
               </div>
-              <AppWasteConsumer />
+              <Foundations />
             </div>
-            <Foundations />
+            <div className="flex justify-end mt-4">
+              <Tableau />
+            </div>
           </div>
-          <div className="flex justify-end mt-4">
-            <Tableau />
-          </div>
+          <ResetGame shuffleDeck={shuffleDeck} />
         </div>
-        <ResetGame shuffleDeck={shuffleDeck} />
-      </div>
+      </DndProvider>
     </AppProvider>
   );
 }
