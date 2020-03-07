@@ -1,10 +1,3 @@
-# [1.10.0](https://github.com/markkelsall/solitaire/compare/v1.9.0...v1.10.0) (2020-03-07)
-
-
-### Features
-
-* make it so foundations can be dropped to ([7c3110b](https://github.com/markkelsall/solitaire/commit/7c3110b5819f817d7eada89f07566d55d75ecf8b))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
