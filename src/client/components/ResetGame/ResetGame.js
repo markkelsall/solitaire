@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const ResetGame = ({ shuffleDeck }) => {
+  const resetGameClick = () => {
+    shuffleDeck && shuffleDeck();
+  };
 
-    const resetGameClick = () => {
-        shuffleDeck && shuffleDeck();
-    }
-
-    return (
-        <button data-testid="resetGame" onClick={resetGameClick}>New Game</button>
-    );
-}
+  return (
+    <button data-testid="resetGame" onClick={resetGameClick}>New Game</button>
+  );
+};
 
 export default ResetGame;

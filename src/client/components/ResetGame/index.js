@@ -1,2 +1,3 @@
-import ResetGame from "./ResetGame";
+import ResetGame from './ResetGame';
+
 export default ResetGame;
