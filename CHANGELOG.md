@@ -1,3 +1,11 @@
+## [1.10.1](https://github.com/markkelsall/solitaire/compare/v1.10.0...v1.10.1) (2020-03-09)
+
+
+### Bug Fixes
+
+* eslint ([0c13976](https://github.com/markkelsall/solitaire/commit/0c1397616e45698692debaf1d337b92e655dd475))
+* move card piles to context ([5049983](https://github.com/markkelsall/solitaire/commit/50499832e61bae0e321c41ebe51034b056ef69ec))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
