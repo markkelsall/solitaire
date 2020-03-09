@@ -36,7 +36,7 @@ const AppProvider = props => {
         dispatch({ type: "RESET" });
     }
 
-    const moveCardToFoundations = () => {
+    const moveCardFromPileToFoundations = () => {
         console.log("called moveCardToFoundations");
     }
 
@@ -44,20 +44,39 @@ const AppProvider = props => {
         console.log("checkIfCardCanBeMovedToFoundations");
     }
 
-    let tableauDeck = [];
+    let pileOne = [];
+    let pileTwo = [];
+    let pileThree = [];
+    let pileFour = [];
+    let pileFive = [];
+    let pileSix = [];
+    let pileSeven = [];
+
     let remainingDeck = [];
     if (props.deck && props.deck.length > 0) {
-        tableauDeck = props.deck.slice(0, 28);
+        pileOne = props.deck.slice(0, 1);
+        pileTwo = props.deck.slice(1, 3);
+        pileThree = props.deck.slice(3, 6);
+        pileFour = props.deck.slice(6, 10);
+        pileFive = props.deck.slice(10, 15);
+        pileSix = props.deck.slice(15, 21);
+        pileSeven = props.deck.slice(21, 28);
         remainingDeck = props.deck.slice(28, 52);
     }
 
     const initialState = {
         stockDeck: remainingDeck.reverse(),
         wasteDeck: [],
-        tableauDeck,
+        pileOne,
+        pileTwo,
+        pileThree,
+        pileFour,
+        pileFive,
+        pileSix,
+        pileSeven,
         showNext,
         resetWaste,
-        moveCardToFoundations,
+        moveCardFromPileToFoundations,
         checkIfCardCanBeMovedToFoundations
     };
 

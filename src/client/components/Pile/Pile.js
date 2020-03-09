@@ -16,7 +16,6 @@ const Pile = ({ cards }) => {
     }
 
     if (cards.length === 3) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
@@ -27,7 +26,6 @@ const Pile = ({ cards }) => {
     }
 
     if (cards.length === 4) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
@@ -39,7 +37,6 @@ const Pile = ({ cards }) => {
     }
 
     if (cards.length === 5) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
@@ -52,7 +49,6 @@ const Pile = ({ cards }) => {
     }
 
     if (cards.length === 6) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
@@ -66,7 +62,6 @@ const Pile = ({ cards }) => {
     }
 
     if (cards.length === 7) {
-        const url = `./cards/${cards[0].imageUrl}`;
         return (
             <div className="relative w-32">
                 <img src="./cards/red_back.png" className="w-32 h-48 absolute" />
