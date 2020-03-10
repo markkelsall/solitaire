@@ -9,7 +9,7 @@
     "build:js": "webpack --mode production",
     "build:css": "postcss src/client/css/main.css -o dist/main.css",
     "test": "jest --coverage",
-    "lint": "eslint src/ --fix",
+    "lint": "eslint src/",
     "check-bundle-size": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "author": "Mark Kelsall",

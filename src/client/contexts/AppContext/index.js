@@ -5,7 +5,7 @@ const AppConsumer = AppContext.Consumer;
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SHOW_NEXT':
+    case 'SHOW_NEXT': {
       const newStockDeck = [...state.stockDeck];
       const card = newStockDeck.pop();
       const newWasteDeck = [...state.wasteDeck];
@@ -15,12 +15,14 @@ const reducer = (state, action) => {
         stockDeck: newStockDeck,
         wasteDeck: newWasteDeck
       };
-    case 'RESET':
+    }
+    case 'RESET': {
       return {
         ...state,
         wasteDeck: [],
         stockDeck: [...state.wasteDeck]
       };
+    }
     default:
   }
 };
@@ -51,15 +53,16 @@ const AppProvider = (props) => {
   let pileSeven = [];
 
   let remainingDeck = [];
-  if (props.deck && props.deck.length > 0) {
-    pileOne = props.deck.slice(0, 1);
-    pileTwo = props.deck.slice(1, 3);
-    pileThree = props.deck.slice(3, 6);
-    pileFour = props.deck.slice(6, 10);
-    pileFive = props.deck.slice(10, 15);
-    pileSix = props.deck.slice(15, 21);
-    pileSeven = props.deck.slice(21, 28);
-    remainingDeck = props.deck.slice(28, 52);
+  const { deck } = props;
+  if (deck && deck.length > 0) {
+    pileOne = deck.slice(0, 1);
+    pileTwo = deck.slice(1, 3);
+    pileThree = deck.slice(3, 6);
+    pileFour = deck.slice(6, 10);
+    pileFive = deck.slice(10, 15);
+    pileSix = deck.slice(15, 21);
+    pileSeven = deck.slice(21, 28);
+    remainingDeck = deck.slice(28, 52);
   }
 
   const initialState = {
