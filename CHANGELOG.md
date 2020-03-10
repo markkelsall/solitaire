@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/markkelsall/solitaire/compare/v1.10.1...v1.10.2) (2020-03-10)
+
+
+### Bug Fixes
+
+* fix some eslint errors ([6ca1592](https://github.com/markkelsall/solitaire/commit/6ca1592929b171018a82c3a4c7eb831b17705a29))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
