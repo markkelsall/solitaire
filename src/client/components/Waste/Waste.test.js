@@ -8,14 +8,14 @@ describe('Waste', () => {
       imageUrl: 'test/image/url'
     }];
 
-    const { getByTestId } = render(<Waste wasteDeck={wasteDeck} />);
+    const { getByTestId } = render(<Waste imgUrl={wasteDeck[0].imageUrl} />);
     expect(getByTestId('waste-img-url')).toHaveProperty('src', 'http://localhost/cards/test/image/url');
   });
 
-  it('should show empty if no wasteDeck available', () => {
+  it('should show empty if no imgUrl passed in', () => {
     const wasteDeck = [];
 
-    const { queryByTestId } = render(<Waste wasteDeck={wasteDeck} />);
+    const { queryByTestId } = render(<Waste />);
     expect(queryByTestId('waste-img-url')).toBeNull();
   });
 });
