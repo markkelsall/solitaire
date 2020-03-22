@@ -13,10 +13,8 @@ const Foundation = ({ foundationList, target, checkIfCardCanBeMovedToFoundations
   });
   let backgroundColor = '';
   if (isOver && canDrop) {
-		console.log('drop it!!!');
     backgroundColor = 'darkgreen';
   } else if (!isOver && canDrop) {
-		console.log('drop it over here!');
     backgroundColor = 'darkkhaki';
 	}
 	
