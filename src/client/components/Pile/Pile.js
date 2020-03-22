@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ActiveCard from '../ActiveCard';
 
-const Pile = ({ cards }) => {
+const Pile = ({ cards, origin }) => {
   if (cards.length === 1) {
     return (<ActiveCard card={cards[0]} />);
   }
@@ -12,7 +12,7 @@ const Pile = ({ cards }) => {
     return (
       <div className="relative w-32">
         <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="Deck back" />
-        <ActiveCard card={cards[0]} className="absolute mt-4" />
+        <ActiveCard card={cards[0]} className="absolute mt-4" origin={origin} />
       </div>
     );
   }
@@ -22,7 +22,7 @@ const Pile = ({ cards }) => {
       <div className="relative w-32">
         <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <ActiveCard card={cards[0]} className="absolute mt-8" />
+        <ActiveCard card={cards[0]} className="absolute mt-8" origin={origin} />
       </div>
     );
   }
@@ -33,7 +33,7 @@ const Pile = ({ cards }) => {
         <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
-        <ActiveCard card={cards[0]} className="absolute mt-12" />
+        <ActiveCard card={cards[0]} className="absolute mt-12" pile="" origin={origin} />
       </div>
     );
   }
@@ -45,7 +45,7 @@ const Pile = ({ cards }) => {
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
-        <ActiveCard card={cards[0]} className="absolute mt-16" />
+        <ActiveCard card={cards[0]} className="absolute mt-16" origin={origin} />
       </div>
     );
   }
@@ -58,7 +58,7 @@ const Pile = ({ cards }) => {
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" alt="card" />
-        <ActiveCard card={cards[0]} className="absolute mt-20" />
+        <ActiveCard card={cards[0]} className="absolute mt-20" origin={origin} />
       </div>
     );
   }
@@ -72,12 +72,12 @@ const Pile = ({ cards }) => {
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" alt="card" />
         <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-20" alt="card" />
-        <ActiveCard card={cards[0]} className="absolute mt-24" />
+        <ActiveCard card={cards[0]} className="absolute mt-24" origin={origin} />
       </div>
     );
   }
 
-  return null;
+  return <div className="w-32 h-48 border-dashed border-2 border-black rounded-lg" />;
 };
 
 Pile.propTypes = {

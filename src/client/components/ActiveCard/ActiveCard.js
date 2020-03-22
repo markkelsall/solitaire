@@ -1,21 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useDrag } from 'react-dnd';
 
-import AppContext from '../../contexts/AppContext';
-
-const Card = ({ card, className }) => {
-  const { checkIfCardCanBeMovedToFoundations } = useContext(AppContext);
+const ActiveCard = ({ card, className, origin }) => {
 
   const [{ isDragging }, drag] = useDrag({
-    item: { name: card.number, type: 'CARD', card },
-    end: (item, monitor) => {
-      const dropResult = monitor.getDropResult();
-      if (item && dropResult) {
-        checkIfCardCanBeMovedToFoundations();
-      }
-    },
+    item: { name: card.number, type: 'CARD', card, origin },
     collect: monitor => ({
       isDragging: monitor.isDragging()
     })
@@ -29,13 +20,13 @@ const Card = ({ card, className }) => {
   return (<img ref={drag} src={url} className={classes} style={{ opacity }} alt="card" />);
 };
 
-Card.propTypes = {
+ActiveCard.propTypes = {
   card: PropTypes.object.isRequired,
   className: PropTypes.string
 };
 
-Card.defaultProps = {
+ActiveCard.defaultProps = {
   className: null
 };
 
-export default Card;
+export default ActiveCard;

@@ -10,25 +10,25 @@ const Tableau = () => {
   return (
     <div className="flex flex-row">
       <div className="ml-4">
-        <Pile cards={pileOne} />
+        <Pile cards={pileOne} origin='pileOne' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileTwo} />
+        <Pile cards={pileTwo} origin='pileTwo' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileThree} />
+        <Pile cards={pileThree} origin='pileThree' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileFour} />
+        <Pile cards={pileFour} origin='pileFour' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileFive} />
+        <Pile cards={pileFive} origin='pileFive' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileSix} />
+        <Pile cards={pileSix} origin='pileSix' />
       </div>
       <div className="ml-4">
-        <Pile cards={pileSeven} />
+        <Pile cards={pileSeven} origin='pileSeven' />
       </div>
     </div>
   );
