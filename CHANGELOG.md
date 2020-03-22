@@ -1,10 +1,3 @@
-## [1.11.1](https://github.com/markkelsall/solitaire/compare/v1.11.0...v1.11.1) (2020-03-22)
-
-
-### Bug Fixes
-
-* move reducers out ([6cc1a18](https://github.com/markkelsall/solitaire/commit/6cc1a18dd4ab0bfff83521591af9f424be61b6dc))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
