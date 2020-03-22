@@ -1,10 +1,3 @@
-# [1.12.0](https://github.com/markkelsall/solitaire/compare/v1.11.1...v1.12.0) (2020-03-22)
-
-
-### Features
-
-* can drag and drop from waste ([6f5464c](https://github.com/markkelsall/solitaire/commit/6f5464c1765c050a9601a44b7ecff49654f58ac3))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
