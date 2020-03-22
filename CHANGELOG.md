@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/markkelsall/solitaire/compare/v1.12.0...v1.12.1) (2020-03-22)
+
+
+### Bug Fixes
+
+* shrink image sizes ([fb3066a](https://github.com/markkelsall/solitaire/commit/fb3066a689861de10a0e9d8b8118f8f2e4c719a7))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
