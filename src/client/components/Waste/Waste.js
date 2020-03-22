@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Waste = ({ imgUrl }) => (
+import ActiveCard from '../ActiveCard';
+
+const Waste = ({ card }) => (
   <div className="w-32 h-48 border-dashed border-2 border-black rounded-lg">
-    {imgUrl ? <img src={`./cards/${imgUrl}`} className="w-32 h48" data-testid="waste-img-url" alt="card" /> : null}
+		{card 
+			? <ActiveCard card={card} origin='waste' testId='waste-img-url' />
+			: null
+		}
   </div>
 );
 

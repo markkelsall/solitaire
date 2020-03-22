@@ -1,9 +1,10 @@
 export default (state, action) => {
-	const foundationOne = state.foundationOne;
-	const foundationTwo = state.foundationTwo;
-	const foundationThree = state.foundationThree;
-	const foundationFour = state.foundationFour;
-	
+	const foundationOne = [...state.foundationOne];
+	const foundationTwo = [...state.foundationTwo];
+	const foundationThree = [...state.foundationThree];
+	const foundationFour = [...state.foundationFour];
+	const wasteDeck = [...state.wasteDeck];
+
 	if (action.data.target === 'foundationOne') {
 		foundationOne.push(action.data.item.card);
 	}
@@ -46,6 +47,10 @@ export default (state, action) => {
 	if (action.data.item.origin === 'pileSeven') {
 		pileSeven.shift();
 	}
+
+	if (action.data.item.origin === 'waste') {
+		wasteDeck.shift();
+	}
 	return {
 		...state,
 		foundationOne,
@@ -58,6 +63,7 @@ export default (state, action) => {
 		pileFour,
 		pileFive,
 		pileSix,
-		pileSeven
+		pileSeven,
+		wasteDeck
 	}
 }

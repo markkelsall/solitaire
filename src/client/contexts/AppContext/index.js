@@ -4,7 +4,7 @@ import reducer from '../reducers';
 const AppContext = createContext();
 const AppConsumer = AppContext.Consumer;
 
-const AppProvider = (props) => {
+const AppProvider = props => {
   const showNext = () => {
     dispatch({ type: 'SHOW_NEXT' });
   };
