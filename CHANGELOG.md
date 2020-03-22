@@ -1,10 +1,3 @@
-# [1.11.0](https://github.com/markkelsall/solitaire/compare/v1.10.3...v1.11.0) (2020-03-22)
-
-
-### Features
-
-* can now drop cards to foundations ([e547709](https://github.com/markkelsall/solitaire/commit/e54770952d890beaff4cd650375e5fcf2c729cdd))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
