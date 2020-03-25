@@ -1,10 +1,3 @@
-# [1.13.0](https://github.com/markkelsall/solitaire/compare/v1.12.1...v1.13.0) (2020-03-25)
-
-
-### Features
-
-* can drop full deck on foundations now ([6f999bc](https://github.com/markkelsall/solitaire/commit/6f999bcc43b67026a90a711b6e526d1df1148672))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
