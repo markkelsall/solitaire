@@ -21,23 +21,6 @@ const AppProvider = props => {
 		dispatch({ type: 'MOVE_CARD_TO_FOUNDATION', data });
   };
 
-  const checkIfCardCanBeMovedToFoundations = (item, target) => {
-		const foundationList = appState[target];
-		if (foundationList.length === 0 && item.card.number === "A") {
-			return true;
-		}
-
-		if (foundationList.length > 1) {
-			const lastFoundationCard = foundationList[foundationList.length-1];
-			if (item.card.suit === lastFoundationCard.suit) {
-				if (parseInt(item.card.number) === (lastFoundationCard.number)+1) {
-					return true;
-				}
-			}
-		}
-		return false;
-  };
-
   let pileOne = [];
   let pileTwo = [];
   let pileThree = [];
@@ -75,8 +58,7 @@ const AppProvider = props => {
     pileSeven,
     showNext,
     resetWaste,
-    moveCardToFoundations,
-    checkIfCardCanBeMovedToFoundations
+    moveCardToFoundations
   };
 
   const [appState, dispatch] = useReducer(reducer, initialState);

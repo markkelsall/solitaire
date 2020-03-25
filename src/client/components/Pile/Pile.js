@@ -5,7 +5,7 @@ import ActiveCard from '../ActiveCard';
 
 const Pile = ({ cards, origin }) => {
   if (cards.length === 1) {
-    return (<ActiveCard card={cards[0]} />);
+    return (<ActiveCard card={cards[0]} origin={origin} />);
   }
 
   if (cards.length === 2) {
