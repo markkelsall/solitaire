@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/markkelsall/solitaire/compare/v1.13.0...v1.13.1) (2020-03-26)
+
+
+### Bug Fixes
+
+* add highlighting for foundation drop ([6e80092](https://github.com/markkelsall/solitaire/commit/6e800928e90086198972d6589dcd09c29224ab91))
+
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
