@@ -43,11 +43,14 @@ const Foundation = ({ foundationList, target, moveCardToFoundations }) => {
       canDrop: !!monitor.canDrop()
     })
   });
-  let backgroundColor = '';
+	let backgroundColor = '';
+	let opacity = 1;
   if (isOver && canDrop) {
-    backgroundColor = 'darkgreen';
+		backgroundColor = 'darkgreen';
+		opacity = 0.5;
   } else if (!isOver && canDrop) {
-    backgroundColor = 'darkkhaki';
+		backgroundColor = 'darkkhaki';
+		opacity = 0.5;
 	}
 	
 	let url;
@@ -58,7 +61,7 @@ const Foundation = ({ foundationList, target, moveCardToFoundations }) => {
     <div ref={drop} className="ml-4" style={{ backgroundColor }}>
       {foundationList.length > 0 
 			? 
-				<img src={url} alt="card" className="w-32 h-48" />
+				<img src={url} alt="card" className="w-32 h-48" style={{ backgroundColor, opacity }} />
 			: 
 				<div className="w-32 h-48 border-dashed border-2 border-black rounded-lg" />}
     </div>

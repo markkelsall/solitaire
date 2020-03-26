@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-import { shuffleDeck } from './utils/deck';
+import { shuffleDeck, generateDeck } from './utils/deck';
 
-const deck = shuffleDeck();
+const deck = generateDeck();
 
 ReactDOM.render(<App shuffleDeck={shuffleDeck} deck={deck} />, document.getElementById('root'));
