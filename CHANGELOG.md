@@ -1,10 +1,3 @@
-## [1.13.2](https://github.com/markkelsall/solitaire/compare/v1.13.1...v1.13.2) (2020-03-29)
-
-
-### Bug Fixes
-
-* check if a numbered card can move to a pile ([712c2a5](https://github.com/markkelsall/solitaire/commit/712c2a5ac7b51c9a2041f5943e9e87f69ce50b68))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
