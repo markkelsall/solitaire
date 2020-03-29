@@ -19,7 +19,11 @@ const AppProvider = props => {
 			target
 		}
 		dispatch({ type: 'MOVE_CARD_TO_FOUNDATION', data });
-  };
+	};
+	
+	const moveCardToPile = (item, target) => {
+		console.log('called movedCardToPile');
+	}
 
   let pileOne = [];
   let pileTwo = [];
@@ -58,7 +62,8 @@ const AppProvider = props => {
     pileSeven,
     showNext,
     resetWaste,
-    moveCardToFoundations
+		moveCardToFoundations,
+		moveCardToPile
   };
 
   const [appState, dispatch] = useReducer(reducer, initialState);

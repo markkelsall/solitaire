@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ActiveCard from '../ActiveCard';
 
 const Waste = ({ card }) => (
-  <div className="w-32 h-48 border-dashed border-2 border-black rounded-lg">
+  <div className="w-32 h-48">
 		{card 
 			? <ActiveCard card={card} origin='waste' testId='waste-img-url' />
 			: null
