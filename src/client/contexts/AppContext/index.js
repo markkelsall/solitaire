@@ -17,12 +17,16 @@ const AppProvider = props => {
 		const data = {
 			item,
 			target
-		}
+		};
 		dispatch({ type: 'MOVE_CARD_TO_FOUNDATION', data });
 	};
 	
 	const moveCardToPile = (item, target) => {
-		console.log('called movedCardToPile');
+		const data = {
+			item,
+			target
+		};
+		dispatch({ type: 'MOVE_CARD_TO_PILE', data });
 	}
 
   let pileOne = [];
@@ -36,13 +40,20 @@ const AppProvider = props => {
   let remainingDeck = [];
   const { deck } = props;
   if (deck && deck.length > 0) {
-    pileOne = deck.slice(0, 1);
-    pileTwo = deck.slice(1, 3);
-    pileThree = deck.slice(3, 6);
-    pileFour = deck.slice(6, 10);
-    pileFive = deck.slice(10, 15);
-    pileSix = deck.slice(15, 21);
-    pileSeven = deck.slice(21, 28);
+		pileOne = deck.slice(0, 1);
+		pileOne[0].turned = true;
+		pileTwo = deck.slice(1, 3);
+		pileTwo[0].turned = true;
+		pileThree = deck.slice(3, 6);
+		pileThree[0].turned = true;
+		pileFour = deck.slice(6, 10);
+		pileFour[0].turned = true;
+		pileFive = deck.slice(10, 15);
+		pileFive[0].turned = true;
+		pileSix = deck.slice(15, 21);
+		pileSix[0].turned = true;
+		pileSeven = deck.slice(21, 28);
+		pileSeven[0].turned = true;
     remainingDeck = deck.slice(28, 52);
   }
 

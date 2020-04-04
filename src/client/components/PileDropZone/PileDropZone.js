@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { useDrop } from 'react-dnd';
 import AppContext from '../../contexts/AppContext';
 
-const PileDropZone = ({ origin, className }) => {
+const PileDropZone = ({ target, className }) => {
 
 	const appState = useContext(AppContext);
 	const { moveCardToPile } = appState;
 
-	const checkIfCardCanBeMovedToPile = (item, origin) => {
-		const pileList = appState[origin];
+	const checkIfCardCanBeMovedToPile = (item, target) => {
+		const pileList = appState[target];
 		if (pileList.length >= 1) {
 			const lastPileCard = pileList[0];
 			if (parseInt(item.card.number)+1 === parseInt(lastPileCard.number)) {
@@ -31,8 +31,8 @@ const PileDropZone = ({ origin, className }) => {
 
   const [{ canDrop, isOver }, drop] = useDrop({
 		accept: 'CARD',
-		canDrop: item => checkIfCardCanBeMovedToPile(item, origin),
-		drop: item => moveCardToPile(item, origin),
+		canDrop: item => checkIfCardCanBeMovedToPile(item, target),
+		drop: item => moveCardToPile(item, target),
     collect: monitor => ({
       isOver: monitor.isOver(),
       canDrop: !!monitor.canDrop()

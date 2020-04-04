@@ -5,85 +5,34 @@ import ActiveCard from '../ActiveCard';
 import PileDropZone from '../PileDropZone';
 
 const Pile = ({ cards, origin }) => {
-  if (cards.length === 1) {
-    return (
+	let cardDisplay = [];
+	
+	const reverseCards = cards.slice().reverse();
+	for (let i = 0; i < reverseCards.length; i++) {
+		const marginTop = i * 8;
+		if (i === reverseCards.length-1) {
+			const activeCardClassName = `z-10 absolute mt-${marginTop}`;
+			const pileDropClassName = `z-10 absolute mt-${marginTop+8}`;
+			cardDisplay.push(<ActiveCard card={reverseCards[i]} className={activeCardClassName} origin={origin} key={i+'active'}/>);
+			cardDisplay.push(<PileDropZone target={origin} className={pileDropClassName} key={i+'pileDropZone'} />);
+		} else {
+			if (reverseCards[i].turned) {
+				const className = `z-10 absolute mt-${marginTop}`;
+				cardDisplay.push(<ActiveCard className={className} card={reverseCards[i]} origin={origin} key={i+'active'} key={i+'activeTurned'}/>);
+			} else {
+				const className = `absolute mt-${marginTop}`;
+				cardDisplay.push(<img src="./cards/red_back.png" className={className} alt="Deck back" key={origin+i}/>);
+			}
+		}
+	}
+
+	if (cards.length > 0) {
+		return (
 			<div className="relative w-32">
-				<ActiveCard card={cards[0]} origin={origin} />
-				<PileDropZone origin={origin} className="z-20 mt-8 absolute" />
+				{cardDisplay}
 			</div>
 		);
-  }
-
-  if (cards.length === 2) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="Deck back" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-4 absolute" origin={origin} />
-				<PileDropZone origin={origin} className="z-20 mt-8 absolute" />
-      </div>
-    );
-  }
-
-  if (cards.length === 3) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-8" origin={origin} />
-				<PileDropZone origin={origin} className="z-20 mt-12 absolute" />
-      </div>
-    );
-  }
-
-  if (cards.length === 4) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-12" pile="" origin={origin} />
-      </div>
-    );
-  }
-
-  if (cards.length === 5) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-16" origin={origin} />
-      </div>
-    );
-  }
-
-  if (cards.length === 6) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" alt="card" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-20" origin={origin} />
-      </div>
-    );
-  }
-
-  if (cards.length === 7) {
-    return (
-      <div className="relative w-32">
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-4" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-8" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-12" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-16" alt="card" />
-        <img src="./cards/red_back.png" className="w-32 h-48 absolute mt-20" alt="card" />
-        <ActiveCard card={cards[0]} className="z-10 absolute mt-24" origin={origin} />
-      </div>
-    );
-  }
+	}
 
   return <div className="w-32 h-48 border-dashed border-2 border-black rounded-lg" />;
 };
