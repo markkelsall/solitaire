@@ -1,15 +1,3 @@
-# [1.14.0](https://github.com/markkelsall/solitaire/compare/v1.13.2...v1.14.0) (2020-04-10)
-
-
-### Bug Fixes
-
-* test checkIfCardCanBeMovedToPile ([159ec8a](https://github.com/markkelsall/solitaire/commit/159ec8a97954ceca98b9d23bdeaee02d2edbf5df))
-
-
-### Features
-
-* can now add cards to piles ([9fd868c](https://github.com/markkelsall/solitaire/commit/9fd868c0df228bcc0239a5fc4bbaedd090f15296))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
