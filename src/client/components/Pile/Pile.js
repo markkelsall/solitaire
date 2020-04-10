@@ -12,7 +12,7 @@ const Pile = ({ cards, origin }) => {
 		const marginTop = i * 8;
 		if (i === reverseCards.length-1) {
 			const activeCardClassName = `z-10 absolute mt-${marginTop}`;
-			const pileDropClassName = `z-10 absolute mt-${marginTop+8}`;
+			const pileDropClassName = `absolute mt-${marginTop+8}`;
 			cardDisplay.push(<ActiveCard card={reverseCards[i]} className={activeCardClassName} origin={origin} key={i+'active'}/>);
 			cardDisplay.push(<PileDropZone target={origin} className={pileDropClassName} key={i+'pileDropZone'} />);
 		} else {
