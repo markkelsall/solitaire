@@ -1,10 +1,3 @@
-## [1.14.1](https://github.com/markkelsall/solitaire/compare/v1.14.0...v1.14.1) (2020-04-11)
-
-
-### Bug Fixes
-
-* make sure to run the check logic! ([012012c](https://github.com/markkelsall/solitaire/commit/012012c752ecc55b670656d8c9e845e1d9c4290b))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
