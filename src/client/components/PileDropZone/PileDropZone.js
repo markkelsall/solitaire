@@ -11,9 +11,9 @@ const PileDropZone = ({ target, className }) => {
 
   const [{ canDrop, isOver }, drop] = useDrop({
 		accept: 'CARD',
-		canDrop: (_) => (item, target) => {
+		canDrop: item => {
 			const pileList = appState[target];
-			checkIfCardCanBeMovedToPile(pileList, item);
+			return checkIfCardCanBeMovedToPile(pileList, item);
 		},
 		drop: item => moveCardToPile(item, target),
     collect: monitor => ({
@@ -23,25 +23,18 @@ const PileDropZone = ({ target, className }) => {
 	});
 	let backgroundColor = '';
 	let opacity = 1;
-	let heightClassName = "";
-	let zIndex = '';
-
 	if (isOver && canDrop) {
 		backgroundColor = 'darkgreen';
 		opacity = 0.5;
-		heightClassName = 'w-32 h-48';
-		zIndex = 'z-10';
+		className += ' z-10 w-32 h-48';
   } else if (!isOver && canDrop) {
 		backgroundColor = 'darkkhaki';
 		opacity = 0.5;
-		heightClassName = 'w-32 h-48';
-		zIndex = 'z-10';
+		className += ' z-10 w-32 h-48';
 	}
 	
   return (
-    <div ref={drop} className={className} style={{ backgroundColor, opacity }}>
-			<div className={heightClassName} />
-    </div>
+    <div ref={drop} className={className} style={{ backgroundColor, opacity }}></div>
   );
 };
 
