@@ -1,10 +1,3 @@
-## [1.14.3](https://github.com/markkelsall/solitaire/compare/v1.14.2...v1.14.3) (2020-04-12)
-
-
-### Bug Fixes
-
-* linting ([11e1f03](https://github.com/markkelsall/solitaire/commit/11e1f03a63b2f46a5d90baf1c03a05577c058504))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
