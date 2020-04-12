@@ -1,11 +1,3 @@
-## [1.14.2](https://github.com/markkelsall/solitaire/compare/v1.14.1...v1.14.2) (2020-04-12)
-
-
-### Bug Fixes
-
-* revert to GH_TOKEN...whatever it is! ([52e0f2a](https://github.com/markkelsall/solitaire/commit/52e0f2a1df51b03599aa827cfaf534f70a01e119))
-* test changing to GITHUB_TOKEN secret ([038d8b2](https://github.com/markkelsall/solitaire/commit/038d8b221f043cd788a12a896d000254fe7d2f54))
-
 ## [1.5.1](https://github.com/markkelsall/solitaire/compare/v1.5.0...v1.5.1) (2019-12-20)
 
 
