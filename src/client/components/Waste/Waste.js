@@ -5,9 +5,9 @@ import ActiveCard from '../ActiveCard';
 
 const Waste = ({ card }) => (
   <div className="w-32 h-48">
-		{card 
-			? <ActiveCard card={card} origin='waste' testId='waste-img-url' />
-			: null
+    {card
+		  ? <ActiveCard card={card} origin="waste" testId="waste-img-url" />
+		  : null
 		}
   </div>
 );

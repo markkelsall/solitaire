@@ -10,13 +10,13 @@ export default (state, action) => {
     }
     case 'RESET': {
       return reset(state);
-		}
-		case 'MOVE_CARD_TO_FOUNDATION': {
-			return moveCardToFoundation(state, action);
-		}
-		case 'MOVE_CARD_TO_PILE': {
-			return moveCardToPile(state, action);
-		}
+    }
+    case 'MOVE_CARD_TO_FOUNDATION': {
+      return moveCardToFoundation(state, action);
+    }
+    case 'MOVE_CARD_TO_PILE': {
+      return moveCardToPile(state, action);
+    }
     default:
       return state;
   }

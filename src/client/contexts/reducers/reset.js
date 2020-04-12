@@ -1,7 +1,5 @@
-export default state => {
-	return {
-		...state,
-		wasteDeck: [],
-		stockDeck: [...state.wasteDeck]
-	}
-};
+export default state => ({
+  ...state,
+  wasteDeck: [],
+  stockDeck: [...state.wasteDeck]
+});
